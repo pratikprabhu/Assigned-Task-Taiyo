@@ -72,26 +72,6 @@ const Maps: React.FC = () => {
                   subdomains={['a', 'b', 'c']}
                   noWrap={true}
                 />
-    
-                {/* {countriesData.map(country => (
-                  <Marker
-                    key={country.countryInfo._id}
-                    position={[country.countryInfo.lat, country.countryInfo.long]}
-                  >
-                    <Popup>
-      <div className="popup-content">
-        <h3 className="mb-2 text-lg font-semibold">
-          <img src={country.countryInfo.flag} alt={country.country} className="mr-2 w-6 h-4" />
-          {country.country}
-        </h3>
-        <p>Total Cases: {country.cases}</p>
-        <p>Active Cases: {country.active}</p>
-        <p>Recovered: {country.recovered}</p>
-        <p>Deaths: {country.deaths}</p>
-      </div>
-    </Popup>
-  </Marker>
-))} */}
 {countriesData.map(country => (
   <Marker
     key={country.countryInfo._id}
